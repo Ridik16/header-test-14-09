@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/46638e86e3/UntitledProject/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" crossorigin="anonymous">
+    <title>Test</title>
+    <style>
+ body {
+    font-family: 'Arial', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.header {
+    padding: 0 5%;
+    font-size: 13px;
+    height: 54px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 108px;
+    position: relative;
+}
+
+.header__menu {
+    margin-left: 25px;
+    padding-left: 10px;
+    height: 100%;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    height: 100%;
+}
+
+.menu__item {
+    padding: 0px 12px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: auto;
+}
+
+.menu__link:hover::after,
+.right__link:hover::after,
+.main__link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    width: 100%;
+}
+
+.menu__link,
+.right__link,
+.main__link {
+    position: relative;
+}
+
+.main__link {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+}
+
+.main__item::before {
+    content: "";
+    width: 2px;
+    height: 24px;
+    left: 0;
+    background-color: #000;
+    position: absolute;
+}
+
+.menu__link,
+.right__icon,
+.right__link {
+    text-decoration: none;
+    color: #989898;
+}
+
+.header__mob {
+    display: none;
+}
+
+.link::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    padding-left: 5px;
+    position: relative;
+    bottom: -3px;
+}
+
+.right__link,
+.right__icon {
+    white-space: nowrap;
+}
+
+.right__icon {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.right__icon i {
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.profile__circle {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+}
+
+.right__profile span {
+    padding-right: 10px;
+}
+
+.fa-search {
+    transform: scale(-1, 1);
+    padding: 0 5px 0 0;
+}
+
+.menu__more {
+    display: none;
+}
+
+@media screen and (max-width:1440px) {
+
+    .icon__title {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+
+    .menu__shop,
+    .menu__support {
+        display: none;
+    }
+
+    .menu__more {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+
+    .menu__accessories {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .menu__business {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .right__link,
+    .header__menu,
+    .right__search {
+        display: none;
+    }
+
+    .right__shop {
+        padding-left: 0;
+    }
+
+    .header__mob,
+    .mob__search {
+        display: block;
+    }
+
+    .header-left {
+        width: 100%;
+    }
+
+    .header__logo {
+        order: 3;
+        margin: auto;
+    }
+
+    .header {
+        min-width: 320px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .burger {
+        left: 0;
+        width: 50px;
+        display: block;
+        z-index: 2;
+        position: absolute;
+        text-align: center;
+    }
+
+    .burger:after {
+        font-family: 'fontAwesome';
+        content: '\f0c9';
+    }
+
+    .mob__search {
+        padding: 0;
+        margin-left: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header ">
+        <!-- header__LEFT -->
+        <div class="header-left">
+            <!-- header__logo -->
+            <a href="#" class="header__logo">
+                <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+                    alt="Microsoft">
+            </a>
+            <!-- header__mob -->
+            <div class="header__mob">
+                <!-- burger -->
+                <div class="burger"></div>
+                <!-- search-mob -->
+                <a class="mob__search right__search right__icon" href="#">
+                    <span class="icon__title">Search</span>
+                    <i class="icon fa fa-search"></i>
+                </a>
+            </div>
+            <!-- header__menu -->
+            <nav class="header__menu">
+            
+                <ul class="menu">
+                    <li class="menu__item main__item"><a class="main__link" href="#">Surface</a></li>
+                    <li class="menu__item menu__computers"><a class="menu__link link" href="#">Computers</a></li>
+                    <li class="menu__item menu__business"><a class="menu__link link" href="#">Computers for Business</a></li>
+                    <li class="menu__item menu__accessories"><a class="menu__link link" href="#">Accessories</a></li>
+                    <li class="menu__item menu__shop"><a class="menu__link link" href="#">Shop now</a></li>
+                    <li class="menu__item menu__support"><a class="menu__link" href="#">Support</a></li>
+                    <li class="menu__item menu__more"><a class="menu__link link" href="#">More</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- header-RIGHT -->
+        <div class="header-right">
+            <!-- right__link -->
+            <a class="right__link link" href="#">All Microsoft</a>
+
+            <!-- ====icons Part=== -->
+            <a class="right__search right__icon" href="#">
+                <span class="icon__title">Search</span>
+                <i class="icon fa fa-search"></i>
+            </a>
+            <a class="right__shop right__icon" href="#" >
+                <span class="icon__title">Cart</span>
+                <i class="icon-shopping-cart"></i>
+            </a>
+            
+            <a class="right__profile right__icon" href="#">
+                <span class="icon__title">Sign In</span>
+                <div class="profile__circle"><i class="icon-user-plus"></i></div>   
+            </a>           
+        </div>    
+    </header>
+</body>
+
+</html>
